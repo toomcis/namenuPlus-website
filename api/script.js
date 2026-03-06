@@ -14,14 +14,14 @@ function detectLang() {
 
 async function loadLang(lang) {
   try {
-    const res = await fetch(`/locales/${lang}.json`);
+    const res = await fetch(`locales/${lang}.json`);
     if (!res.ok) throw new Error();
     T = await res.json();
     currentLang = lang;
     localStorage.setItem('namenu_lang', lang);
   } catch {
     if (lang !== 'en') {
-      const res = await fetch('/locales/en.json');
+      const res = await fetch('locales/en.json');
       T = await res.json();
       currentLang = 'en';
     }
