@@ -3,20 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="refresh" content="2;url=/api">
-<title>namenu+</title>
+<title>ToMenu — Je to TO menu ktoré potrebuješ</title>
+<meta name="description" content="ToMenu unifies all restaurant lunch menus into one app. Advanced filters, privacy-first, free and ad-free.">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <div class="logo">namenu+</div>
-    <div class="pill">Early Access Beta</div>
-    <p class="sub">Redirecting to API docs<span class="dots"></span></p>
-    <a href="/api" class="btn">Go now →</a>
-  </div>
-  <script src="script.js"></script>
+
+<div id="beta-bar">
+  <span class="dot"></span>
+  <span data-i18n="beta.bar">ToMenu is currently in early access beta</span>
+</div>
+
+<button id="lang-toggle" onclick="toggleLang()">EN</button>
+
+<div class="page-wrap">
+
+  <!-- ── HERO ── -->
+  <header>
+    <div class="logo-row">
+      <span class="logo-mark">ToMenu</span>
+      <span class="beta-pill" data-i18n="hero.pill">Early Access Beta</span>
+    </div>
+    <h1 data-i18n="hero.title">Je to <span class="accent">TO menu</span><br>ktoré potrebuješ.</h1>
+    <p class="tagline" data-i18n="hero.tagline">ToMenu brings every restaurant's daily lunch menu into one app. Advanced filters, GPS sorting, privacy-first, completely free and ad-free.</p>
+    <div class="cta-row">
+      <a href="#download" class="btn-primary" data-i18n="hero.cta_primary">↓ Download the app</a>
+      <a href="/api"      class="btn-ghost"   data-i18n="hero.cta_api">API docs →</a>
+    </div>
+    <div class="hero-sub" data-i18n="hero.sub">Available for Android · Slovakia 🇸🇰</div>
+  </header>
+
+  <!-- ── FEATURES ── -->
+  <section id="features">
+    <div class="section-label" data-i18n="feat.label">why tomenu</div>
+    <h2 data-i18n="feat.title">Everything you need to pick lunch.</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <div class="feature-title" data-i18n="feat.gps.title">GPS sorted</div>
+        <div class="feature-desc"  data-i18n="feat.gps.desc">Restaurants sorted by distance from you. Closest first, always.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <div class="feature-title" data-i18n="feat.search.title">Dish search</div>
+        <div class="feature-desc"  data-i18n="feat.search.desc">Search for a specific dish across all restaurants at once. Find schnitzel, goulash, whatever you're craving.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚗</div>
+        <div class="feature-title" data-i18n="feat.filter.title">Advanced filters</div>
+        <div class="feature-desc"  data-i18n="feat.filter.desc">Filter by price, weight, allergens, delivery. Even sort by best price-to-portion ratio.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛵</div>
+        <div class="feature-title" data-i18n="feat.delivery.title">Delivery aware</div>
+        <div class="feature-desc"  data-i18n="feat.delivery.desc">Know which restaurants deliver before you even open the menu.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <div class="feature-title" data-i18n="feat.privacy.title">Privacy first</div>
+        <div class="feature-desc"  data-i18n="feat.privacy.desc">No tracking, no ads, no mandatory account. Everything opt-in. Even fully self-hostable.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <div class="feature-title" data-i18n="feat.week.title">Full week</div>
+        <div class="feature-desc"  data-i18n="feat.week.desc">Browse Monday's menu on a Wednesday. Plan ahead, not just today.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section id="how">
+    <div class="section-label" data-i18n="how.label">how it works</div>
+    <h2 data-i18n="how.title">Open. Search. Eat.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <div class="step-title" data-i18n="step1.title">Open the app</div>
+          <div class="step-desc"  data-i18n="step1.desc">No sign-up required. Guest mode works from day one. Your location sorts nearby restaurants automatically.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <div class="step-title" data-i18n="step2.title">Browse or search</div>
+          <div class="step-desc"  data-i18n="step2.desc">Scroll through today's menus or search a specific dish. Filter by price, allergens, or delivery.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <div class="step-title" data-i18n="step3.title">Tap and go</div>
+          <div class="step-desc"  data-i18n="step3.desc">Tap an address to open in Maps. Call the restaurant directly. Done.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DOWNLOAD ── -->
+  <section id="download">
+    <div class="section-label" data-i18n="dl.label">download</div>
+    <h2 data-i18n="dl.title">Get ToMenu</h2>
+    <p data-i18n="dl.p">Currently in early access beta. Android APK available directly — no Play Store needed.</p>
+    <div class="download-box">
+      <div class="early-tag" data-i18n="dl.tag">✦ Early Access Beta</div>
+      <h3 data-i18n="dl.box_title">Android APK</h3>
+      <p data-i18n="dl.box_p">Download and install directly. Enable "Install from unknown sources" in your Android settings if prompted.</p>
+      <a id="apk-btn" href="https://github.com/toomcis/tomenu-app/releases/latest/download/tomenu.apk" class="btn-primary" data-i18n="dl.btn">↓ Download APK</a>
+      <div class="download-note" data-i18n="dl.note">Latest release on GitHub · Android 8.0+ required</div>
+      <div class="download-links">
+        <a href="https://github.com/toomcis/tomenu-app/releases" data-i18n="dl.releases">All releases →</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/toomcis/tomenu-app" data-i18n="dl.source">Source code →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRIVACY ── -->
+  <section id="privacy">
+    <div class="section-label" data-i18n="priv.label">privacy</div>
+    <h2 data-i18n="priv.title">We mean it when we say privacy-first.</h2>
+    <div class="privacy-grid">
+      <div class="privacy-item">
+        <span class="priv-icon">✓</span>
+        <span data-i18n="priv.1">No ads, ever. Not in the app, not in the API.</span>
+      </div>
+      <div class="privacy-item">
+        <span class="priv-icon">✓</span>
+        <span data-i18n="priv.2">No account required. Guest mode works for everything.</span>
+      </div>
+      <div class="privacy-item">
+        <span class="priv-icon">✓</span>
+        <span data-i18n="priv.3">All data sharing is opt-in and clearly labelled.</span>
+      </div>
+      <div class="privacy-item">
+        <span class="priv-icon">✓</span>
+        <span data-i18n="priv.4">Fully open source. MIT licensed. Inspect everything.</span>
+      </div>
+      <div class="privacy-item">
+        <span class="priv-icon">✓</span>
+        <span data-i18n="priv.5">Self-hostable. Run your own backend, keep all data local.</span>
+      </div>
+      <div class="privacy-item">
+        <span class="priv-icon">✓</span>
+        <span data-i18n="priv.6">Delete your account and all your data anytime, instantly.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOR DEVELOPERS ── -->
+  <section id="api">
+    <div class="section-label" data-i18n="api.label">for developers</div>
+    <h2 data-i18n="api.title">There's a REST API too.</h2>
+    <p data-i18n="api.p">ToMenu exposes all menu data via a clean JSON API. Build Telegram bots, office lunch tools, integrations — whatever you want. Keys are free during beta.</p>
+    <div class="api-box">
+      <div class="code-block">GET https://api.tomenu.sk/api/levice/menu
+<span style="color:#60a5fa">Authorization:</span> your_api_key_here</div>
+      <a href="/api" class="btn-ghost" style="margin-top:16px;display:inline-block" data-i18n="api.btn">View full API docs →</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span data-i18n="footer.left">ToMenu beta · <a href="https://github.com/toomcis/tomenu-app">github</a> · made in Levice 🇸🇰</span>
+    <span><a href="mailto:contact@tomenu.sk">contact@tomenu.sk</a></span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

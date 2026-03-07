@@ -1,20 +1,18 @@
 {
-  "beta.bar":           "namenu+ is currently in beta — endpoints and response shapes may change",
+  "beta.bar":           "ToMenu is currently in beta — endpoints and response shapes may change",
   "toc.title":          "On this page",
-  "toc.what":           "What is namenu+",
+  "toc.what":           "What is ToMenu",
   "toc.auth":           "Authentication",
   "toc.endpoints":      "Endpoints",
   "toc.access":         "Get API access",
-
   "hero.title":         "Lunch menus,<br><span class=\"accent\">structured &amp; accessible.</span>",
-  "hero.tagline":       "namenu+ scrapes daily lunch menus from Slovak restaurants and exposes them via a clean REST API. Filter by city, day, allergens, price, delivery — and build things on top.",
+  "hero.tagline":       "ToMenu scrapes daily lunch menus from Slovak restaurants and exposes them via a clean REST API. Filter by city, day, allergens, price, delivery — and build things on top.",
   "hero.cta_primary":   "↗ Get early access",
   "hero.cta_secondary": "View endpoints",
-
   "what.label":         "overview",
-  "what.title":         "What is namenu+?",
-  "what.p1":            "namenu+ aggregates daily lunch menus published on <a href=\"https://namenu.sk\" style=\"color:var(--text2)\">namenu.sk</a> and other sources into a structured, queryable API. Instead of manually checking restaurant websites, you get clean JSON with dish names, prices, allergens, nutritional info, and delivery availability.",
-  "what.p2":            "Currently covering <strong style=\"color:var(--text)\">Levice, Slovakia</strong> with more cities being added as the project grows. The full week's menu is scraped every day — so you can query Monday's menu on a Wednesday.",
+  "what.title":         "What is ToMenu?",
+  "what.p1":            "ToMenu aggregates daily lunch menus from Slovak restaurants into a structured, queryable API. Instead of manually checking restaurant websites, you get clean JSON with dish names, prices, allergens, nutritional info, and delivery availability.",
+  "what.p2":            "Currently covering <strong style=\"color:var(--text)\">Levice, Slovakia</strong> with more cities being added as the project grows. The full week's menu is scraped every day.",
   "feat.week.title":    "Full week coverage",
   "feat.week.desc":     "Query any day of the current week, not just today.",
   "feat.allergen.title":"Allergen filtering",
@@ -23,24 +21,21 @@
   "feat.delivery.desc": "Know which restaurants offer delivery before you even open the menu.",
   "feat.build.title":   "Build anything",
   "feat.build.desc":    "Telegram bots, lunch pickers, office tools, mobile apps — it's just JSON.",
-
   "auth.label":         "authentication",
   "auth.title":         "Authentication",
   "auth.p1":            "All API requests require an API key passed in the <code style=\"color:var(--blue)\">Authorization</code> header.",
   "auth.box_title":     "Authorization header",
   "auth.box_p":         "Include your key with every request:",
   "auth.p2":            "Keys are personal and linked to your email. Don't share them. See the <a href=\"#access\" style=\"color:var(--green)\">Access section</a> below to request one.",
-
   "ep.label":           "reference",
   "ep.title":           "API Endpoints",
-  "ep.notice":          "Base URL: <strong>https://api.toomcis.eu</strong>",
+  "ep.notice":          "⚠ Base URL: <strong>https://api.tomenu.sk</strong>",
   "ep.cities.desc":     "List all available cities",
   "ep.cities.p":        "Returns all cities that have been scraped at least once.",
   "ep.week.desc":       "Which days have data this week",
   "ep.rests.desc":      "List restaurants for a city",
   "ep.rest.desc":       "Full menu for one restaurant",
   "ep.menu.desc":       "All dishes across all restaurants — filterable",
-
   "th.param":           "param",
   "th.type":            "type",
   "th.desc":            "description",
@@ -56,18 +51,15 @@
   "param.allergens":    "Comma-separated allergen numbers e.g. <code>1,7,14</code>",
   "param.limit":        "Max results, default 50, max 200",
   "param.offset":       "Pagination offset",
-
   "access.label":       "access",
   "access.title":       "Get API Access",
-  "access.p":           "namenu+ is currently in <strong style=\"color:var(--amber)\">early access beta</strong>. Keys are issued manually — send a request email and you'll get a key linked to your address within a day or two.",
+  "access.p":           "ToMenu is currently in <strong style=\"color:var(--amber)\">early access beta</strong>. Keys are issued manually — send a request email and you'll get a key within a day or two.",
   "access.tag":         "✦ Early Access",
   "access.box_title":   "Request your API key",
   "access.box_p":       "Tell us what you're building. Keys are free during beta. One key per developer.",
   "access.btn":         "✉ Request early access",
-  "access.note":        "Sends a pre-filled email to contact@toomcis.eu — just hit send.",
-
-  "mailto.subject":     "namenu+ API Key Request",
-  "mailto.body":        "Hello,\n\nI would like to request early access to the namenu+ API.\n\nName: \nWhat I'm building: \nExpected usage: \n\nThank you,\n",
-
-  "footer.left":        "namenu+ beta · <a href=\"https://github.com/toomcis/namenuPlus\">github</a> · made in Levice 🇸🇰"
+  "access.note":        "Sends a pre-filled email to contact@tomenu.sk — just hit send.",
+  "mailto.subject":     "ToMenu API Key Request",
+  "mailto.body":        "Hello,\n\nI would like to request early access to the ToMenu API.\n\nName: \nWhat I'm building: \nExpected usage: \n\nThank you,\n",
+  "footer.left":        "ToMenu beta · <a href=\"https://github.com/toomcis/tomenu\">github</a> · made in Levice 🇸🇰"
 }
